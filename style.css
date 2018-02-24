@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: #5d3c2a;
+    background-image: url(./sprite_bg.jpg);
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+#container {
+    padding: 10px;
+    max-width: 768px;
+    width: 100%;
+    min-height: 400px;
+}
+.header_logo-img {
+    width: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+.user-info_wrapper {
+    margin-bottom: 10px;
+}
+@media (min-width: 700px) {
+    .user-info_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.user-info_photo {
+    max-width: 250px;
+    min-height: 250px;
+    margin: 0 auto 15px;
+    overflow: hidden;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 700px) {
+    .user-info_photo {
+        margin-bottom: 0;
+    }
+}
+.user-info_photo-img {
+    display: block;
+    width: 100%;
+}
+.user-info_content {
+    padding: 10px;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 700px) {
+    .user-info_content {
+        width: calc(100% - 260px);
+    }
+}
+.user-info_name {
+    margin-top: 0;
+    color: #fff;
+}
+.user-info_list {
+    padding: 0;
+    margin: 0;
+}
+@media (min-width: 500px) {
+    .user-info_list {
+        column-count: 2;
+    }
+}
+.user-info_item {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 10px;
+}
+.user-info_item-title {
+    color: #c2a658;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.user-info_item-title:after {
+    content: '.....................................................';
+    display: inline-block;
+    position: absolute;
+    margin-left: 0.3em;
+    bottom: 0;
+    width: 100%;
+    font-size: 35px;
+    letter-spacing: 13px;
+    line-height: 0.9;
+}
+.user-info_item-content {
+    	color: #fff;
+	font-size: 20px;
+}
+.introtext {
+    color: #fff;
+    font-size: 20px;
+}
+.introtext a{
+	font-size:20px; 
+	color:#c2a658; 
+	font-weight:bold
+}
+.introtext a:hover{
+	font-size:20px;
+	color:#ff0000;
+	font-weight:bold
+}
+.section_title {
+    color: #c2a658;
+    font-size: 25px;
+}
